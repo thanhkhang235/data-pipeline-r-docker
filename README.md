@@ -16,8 +16,8 @@ This repository contains an R data pipeline that processes and visualizes data u
 - **Git**: Clone the repository:
 
   ```bash
-  git clone <repository-url>
-  cd <repository-folder>
+  git clone https://github.com/thanhkhang235/data-pipeline-r-docker.git
+  cd data-pipeline-r-docker
  ```
  
 # Running the Pipeline
@@ -29,11 +29,14 @@ To build the Docker image for the pipeline, run the following command:
 ```bash
 docker build -t r_targets_pipeline .
 ```
+
 ## Run the Pipeline
 To run the pipeline inside the container, use the following command. This mounts the current directory into the container and executes the pipeline:
+
 ```bash
 docker run -v $(pwd):/pipeline r_targets_pipeline
 ```
+
 ## Pipeline Execution
 By default, the container runs the following command:
 ```bash

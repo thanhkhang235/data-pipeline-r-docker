@@ -7,7 +7,7 @@ create_summary|function|88d5f6c8f702c7fd|||||||||||||||
 horsepower_plot|stem|81b6d5f188cf2adf|3b3bcbb20e0833c2|36f493175f574a30|715600458||t20076.4157434913s|ca1b2e3c1958effd|88538|rds|local|vector|||0.085|aes_string was deprecated in ggplot2 3.0.0.ℹ Please use tidy evaluation idioms with aes.ℹ See also vignetteggplot2inpackages for more information.|
 raw_data|stem|7fb3936f96103398|546fd3030d5778cc|2c530c1562a7fbd1|-1101284392||t20076.4124172926s|35f88461d872da97|1225|rds|local|vector|||0.001||
 save_plot|function|009db3fc7a5cd22e|||||||||||||||
-saved_horsepower_plot|stem|ba704f6b3acd618a|2616aade2b1cdaa6|2fa556e07df242a1|-959062986|/Users/admin/Desktop/data-pipeline-r-docker/output/horsepower_plot.png|t20076.4157536488s|97cadd53255cfee3|41103|file|local|vector|||0.824||
-saved_weight_plot|stem|4cc3ac67b9a803a2|79f64cf8efece614|1a07be1e574d7f20|-1126600829|/Users/admin/Desktop/data-pipeline-r-docker/output/weight_plot.png|t20076.4157565028s|634ae5741d94068f|43768|file|local|vector|||0.242||
+saved_horsepower_plot|stem|db13b4a51e018828|2616aade2b1cdaa6|2fa556e07df242a1|-959062986|/pipeline/output/horsepower_plot.png|t20076.9963103435s|6c742670cbb99118|51761|file|local|vector|||1.037||
+saved_weight_plot|stem|339fdcc38735260b|79f64cf8efece614|1a07be1e574d7f20|-1126600829|/pipeline/output/weight_plot.png|t20076.9963169605s|fa22626ad981e2ff|54399|file|local|vector|||0.5||
 summary_table|stem|3b1d154808ad9fb0|78f15a486b01f26c|fa75a727f4a4f76b|-1890126374||t20076.4157419389s|9225f31f1982eafe|240|rds|local|vector|||0.011||
 weight_plot|stem|f2348c494590b173|c197789d89e376b3|36f493175f574a30|-93017474||t20076.4157440645s|5bd2ffad21a951b5|88596|rds|local|vector|||0.009||

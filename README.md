@@ -15,10 +15,10 @@ This repository contains an R data pipeline that processes and visualizes data u
 - **Docker**: Install [Docker](https://www.docker.com/).
 - **Git**: Clone the repository:
 
-  ```bash
+```bash
   git clone https://github.com/thanhkhang235/data-pipeline-r-docker.git
   cd data-pipeline-r-docker
- ```
+```
  
 # Running the Pipeline
 

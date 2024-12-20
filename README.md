@@ -7,6 +7,8 @@ This repository contains an R data pipeline that processes and visualizes data u
 - **Reproducible pipeline**: Powered by `targets` and `renv`.
 - **Containerized environment**: Ensures consistency with Docker.
 - **Simple execution**: Run the entire pipeline with a single command.
+- **GitHub Actions Integration:** The pipeline runs automatically on GitHub for every push or pull request to the main branch.
+
 
 ## Setup
 

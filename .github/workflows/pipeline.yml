@@ -1,13 +1,3 @@
-name: Run R Targets Pipeline with Docker
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
@@ -27,7 +17,7 @@ jobs:
 
       - name: Run the pipeline inside Docker
         run: |
-          docker run -v $(pwd):/pipeline r_targets_pipeline
+          docker run --name pipeline_container -v $(pwd):/pipeline r_targets_pipeline
 
       - name: Upload output files
         uses: actions/upload-artifact@v3
@@ -35,6 +25,11 @@ jobs:
           name: pipeline-output
           path: output/
 
+      - name: Stop and remove container
+        run: |
+          docker stop pipeline_container || true
+          docker rm pipeline_container || true
+
       - name: Clean up Docker images
         run: |
-          docker rmi r_targets_pipeline
+          docker rmi -f r_targets_pipeline || true

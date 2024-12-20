@@ -49,16 +49,16 @@ docker run -v $(pwd):/pipeline r_targets_pipeline
 
 The pipeline performs the following steps:
 
-## Data Cleaning
+### Data Cleaning
 
 - Filters rows with MPG greater than 15.
 - Converts the `cyl` column into a factor for categorical analysis.
 
-## Summary Statistics
+### Summary Statistics
 
 - Calculates average MPG and horsepower grouped by the number of cylinders.
 
-## Visualization
+### Visualization
 
 Creates scatter plots for:
 - **Horsepower vs MPG**

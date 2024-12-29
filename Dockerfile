@@ -22,8 +22,6 @@ COPY . /pipeline
 RUN R -e "if (!file.exists('renv.lock')) renv::init()"
 RUN R -e "renv::restore()"
 
-# Install additional dependencies if necessary (functions.R, etc.)
-RUN R -e "if (file.exists('functions.R')) source('functions.R')"
 
 # Set container startup command
 CMD ["R", "-e", "targets::tar_make()"]
